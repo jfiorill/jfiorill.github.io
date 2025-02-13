@@ -41,35 +41,55 @@
     }
 
     footer {
-      background-color: #C9ADA7; /* Matches the header */
+      background-color: #C9ADA7; 
       color: #22223B;
       padding: 15px;
       position: fixed;
       bottom: 0;
       width: 100%;
       display: flex;
-      justify-content: flex-end; /* Moves contact info to the right */
-    }
+      justify-content: flex-end;
+      align-items: center; /* Aligns vertically */
+    }  
 
     .footer-container {
-      width: 90%;
+      max-width: 90%;
       display: flex;
-      justify-content: flex-end; /* Aligns content to the right */
+      flex-wrap: wrap;
+      justify-content: flex-end;
     }
 
     .contact-info {
       margin: 0;
+      white-space: nowrap; 
     }
 
     .footer-container a {
       color: #22223B;
       text-decoration: none;
       font-weight: bold;
-      margin-left: 10px; /* Spacing between links */
+      margin-left: 10px; 
     }
 
     .footer-container a:hover {
       text-decoration: underline;
+    }
+
+    @media screen and (max-width: 600px) {
+      footer {
+        justify-content: center;
+        text-align: center;
+      }
+
+      .footer-container {
+        width: 100%;
+        justify-content: center;
+      }
+
+      .contact-info {
+        white-space: normal;
+        text-align: center;
+      }
     }
     </style>
   </head>
