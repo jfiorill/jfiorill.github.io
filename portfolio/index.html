@@ -39,6 +39,38 @@
       background-color: #22223B;
       color: #C9ADA7;
     }
+
+    footer {
+      background-color: #C9ADA7; /* Matches the header */
+      color: #22223B;
+      padding: 15px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      display: flex;
+      justify-content: flex-end; /* Moves contact info to the right */
+    }
+
+    .footer-container {
+      width: 90%;
+      display: flex;
+      justify-content: flex-end; /* Aligns content to the right */
+    }
+
+    .contact-info {
+      margin: 0;
+    }
+
+    .footer-container a {
+      color: #22223B;
+      text-decoration: none;
+      font-weight: bold;
+      margin-left: 10px; /* Spacing between links */
+    }
+
+    .footer-container a:hover {
+      text-decoration: underline;
+    }
     </style>
   </head>
   <body style = "background-color: #4a4e69">
@@ -60,10 +92,12 @@
     </br>
     <img src="JF_Logo.jpg" alt = "Logo" width="350" height="350">
     <footer>
-    <div class="footer-container">
-      <p> Contact me at: <a href="mailto:jacobfiorillo@gmail.com">jacobfiorillo@gmail.com</a> </p>
-      <p> Connect with me: <a href="https://jfiorill.github.io/" target="_blank">GitHub</a> </p>
-    </div>
-  </footer>
+      <div class="footer-container">
+        <p class="contact-info">
+          Contact me at: <a href="jacobfiorillo@gmail.com">jacobfiorillo@gmail.com</a> | 
+          <a href="https://jfiorill.github.io/" target="_blank">GitHub</a> | 
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
