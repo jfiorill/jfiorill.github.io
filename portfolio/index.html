@@ -48,27 +48,28 @@
       bottom: 0;
       width: 100%;
       display: flex;
-      justify-content: flex-end;
-      align-items: center; /* Aligns vertically */
-    }  
+      justify-content: center;
+      align-items: center;
+    }
 
     .footer-container {
-      max-width: 100%;
+      max-width: 90%;
       display: flex;
-      flex-wrap: wrap;
-      justify-content: flex-end;
+      flex-wrap: wrap; 
+      justify-content: center; 
     }
 
     .contact-info {
       margin: 0;
       white-space: nowrap; 
+      text-align: center;
     }
 
-    .footer-container a {
+    .footer-container a, .phone {
       color: #22223B;
       text-decoration: none;
       font-weight: bold;
-      margin-left: 10px; 
+      margin: 0 10px;
     }
 
     .footer-container a:hover {
@@ -77,18 +78,23 @@
 
     @media screen and (max-width: 600px) {
       footer {
-        justify-content: center;
-        text-align: center;
+        padding: 10px;
       }
 
       .footer-container {
         width: 100%;
-        justify-content: center;
+        text-align: center;
+        flex-direction: column; /* Stacks items vertically */
       }
 
       .contact-info {
-        white-space: normal;
+        white-space: normal; /* Allows wrapping */
         text-align: center;
+      }
+
+      .footer-container a, .phone {
+        display: block; /* Puts each item on its own line */
+        margin: 5px 0;
       }
     }
     </style>
@@ -115,7 +121,8 @@
       <div class="footer-container">
         <p class="contact-info">
           Contact me at: <a href="jacobfiorillo@gmail.com">jacobfiorillo@gmail.com</a> | 
-          <a href="https://jfiorill.github.io/" target="_blank">GitHub</a> | 
+          <span class="phone">123-456-7890</span> | 
+          <a href="https://jfiorill.github.io/" target="_blank">GitHub</a> 
         </p>
       </div>
     </footer>
