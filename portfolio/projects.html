@@ -79,10 +79,25 @@
       background-color: #C9ADA7; 
       color: #22223B;
       padding: 15px;
-      text-align: center;
       position: fixed;
       bottom: 0;
       width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .footer-container {
+      max-width: 90%;
+      display: flex;
+      flex-wrap: wrap; 
+      justify-content: center; 
+    }
+
+    .contact-info {
+      margin: 0;
+      white-space: nowrap; 
+      text-align: center;
     }
 
     .footer-container a, .phone {
@@ -95,6 +110,27 @@
     .footer-container a:hover {
       text-decoration: underline;
     }
+
+    @media screen and (max-width: 600px) {
+      footer {
+        padding: 10px;
+      }
+
+      .footer-container {
+        width: 100%;
+        text-align: center;
+        flex-direction: column; 
+      }
+
+      .contact-info {
+        white-space: normal; 
+        text-align: center;
+      }
+
+      .footer-container a, .phone {
+        display: block;
+        margin: 5px 0;
+      }
   </style>
 </head>
 <body>
