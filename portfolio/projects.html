@@ -97,6 +97,52 @@
         display: block;
         margin: 5px 0;
       }
+
+      .projects-container {
+        width: 80%;
+        max-width: 1000px;
+        margin: 20px auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+      }
+
+      .project-card {
+        background-color: #C9ADA7;
+        color: #22223B;
+        padding: 15px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+
+      .project-card img {
+        width: 100%;
+        max-height: 200px;
+        object-fit: cover;
+        border-radius: 8px;
+      }
+      
+      .project-card h3 {
+        margin-top: 10px;
+      }
+
+      .project-card p {
+        font-size: 14px;
+        line-height: 1.5;
+      }
+
+      .project-card a {
+        display: inline-block;
+        margin-top: 10px;
+        color: #22223B;
+        font-weight: bold;
+        text-decoration: none;
+      }
+
+      .project-card a:hover {
+        text-decoration: underline;
+      }
     }
     </style>
   </head>
@@ -117,7 +163,23 @@
   </head>
   <body>
     </br>
-    <p> Projects </p>
+    <div class="projects-container">
+      <div class="project-card">
+        <img src="project1.jpg" alt="Project 1 Image">
+        <h3>Crystal Clashers</h3>
+        <p>This is a two player game with twelve different characters to choose from. In a similar to dodgeball style, players with launch crystals at each other until one players health is completely gone. However, every character has a unique ability and are granted buffs as their health gets lower. Additionally, each character has their own special move that charges up over time.</p>
+      </div 
+      <div class="project-card">
+        <img src="project2.jpg" alt="Project 2 Image">
+        <h3>Project 2</h3>
+        <p>This is a brief description of Project 2. It is focused on A, B, and C.</p>
+      </div>
+      <div class="project-card">
+        <img src="project4.jpg" alt="Project 4 Image">
+        <h3>Project 4</h3>
+        <p>This is a brief description of Project 4, explaining its purpose and features.</p>
+      </div>
+    </div>
     <footer>
       <div class="footer-container">
         <p class="contact-info">
