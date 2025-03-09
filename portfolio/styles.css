@@ -44,13 +44,12 @@ h2 {
   display: block;
   margin: 0 auto;
   border-radius: 8px;
-  max-width: 600px;   /* Correct image size for projects */
+  max-width: 600px;   
   height: auto;
 }
 
-/* Paragraph Styling for Both Pages */
 p {
-  color: #f2e9e4;  /* Ensures consistent text color */
+  color: #f2e9e4;  
   text-align: justify;
   width: 90%;
   max-width: 700px;
@@ -58,8 +57,6 @@ p {
   line-height: 1.6;
 }
 
-
-/* Top Navigation Bar */
 .topnav {
     overflow: hidden;
     background-color: #C9ADA7;
@@ -100,14 +97,8 @@ footer p.footer-text {
 }
 
 .footer-container {
-    display: inline-block; /* Ensures the footer doesn't break into multiple lines */
+    display: inline-block;
     max-width: 100%;
-    text-align: center;
-}
-
-.contact-info {
-    margin: 0;
-    white-space: nowrap;
     text-align: center;
 }
 
@@ -116,10 +107,6 @@ footer p.footer-text {
     text-decoration: none;
     font-weight: bold;
     margin: 0 10px;
-}
-
-.footer-container a:hover {
-    text-decoration: underline;
 }
 
 @media screen and (max-width: 600px) {
