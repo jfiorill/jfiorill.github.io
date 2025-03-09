@@ -98,6 +98,7 @@ footer p.footer-text {
   text-align: center; 
   margin: 0;  
   width: auto; 
+  display: inline-block;
 }
 
 /* Footer Container */
