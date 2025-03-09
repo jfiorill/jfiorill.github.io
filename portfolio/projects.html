@@ -2,193 +2,72 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Fiorillo - Projects</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background-color: #4a4e69;
-      color: #C9ADA7;
-    }
-
-    h2 {
-      text-align: center;
-      color: #f2e9e4;
-    }
-
-    .topnav {
-      overflow: hidden;
-      background-color: #C9ADA7;
-    }
-
-    .topnav a {
-      float: left;
-      color: #22223B;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-      font-size: 17px;
-    }
-
-    .topnav a:hover {
-      background-color: #ddd;
-      color: black;
-    }
-
-    .topnav a.active {
-      background-color: #22223B;
-      color: #C9ADA7;
-    }
-
-    .projects-container {
-      width: 80%;
-      max-width: 1000px;
-      margin: 50px auto;
-      text-align: center;
-    }
-
-    .project {
-      margin-bottom: 70px; 
-    }
-
-    .project h3 {
-      text-align: center;
-      font-size: 22px;
-      margin-bottom: 10px;
-    }
-
-    .project p {
-      font-size: 16px;
-      line-height: 1.5;
-      margin: 0 auto 20px;
-      width: 80%;
-      max-width: 700px;
-      text-align: justify;
-    }
-
-    .project img {
-      width: 80%;
-      max-width: 600px;
-      height: auto;
-      display: block;
-      margin: 0 auto;
-      border-radius: 8px;
-    }
-
-    footer {
-      background-color: #C9ADA7; 
-      color: #22223B;
-      padding: 15px;
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .footer-container {
-      max-width: 90%;
-      display: flex;
-      flex-wrap: wrap; 
-      justify-content: center; 
-    }
-
-    .contact-info {
-      margin: 0;
-      white-space: nowrap; 
-      text-align: center;
-    }
-
-    .footer-container a, .phone {
-      color: #22223B;
-      text-decoration: none;
-      font-weight: bold;
-      margin: 0 10px;
-    }
-
-    .footer-container a:hover {
-      text-decoration: underline;
-    }
-
-    @media screen and (max-width: 600px) {
-      footer {
-        padding: 10px;
-      }
-
-      .footer-container {
-        width: 100%;
-        text-align: center;
-        flex-direction: column; 
-      }
-
-      .contact-info {
-        white-space: normal; 
-        text-align: center;
-      }
-
-      .footer-container a, .phone {
-        display: block;
-        margin: 5px 0;
-      }
-  </style>
+  <title>Fiorillo</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h2>Jake Fiorillo</h2>
+  <!-- Header -->
+  <div id="header"></div>
 
-  <div class="topnav">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a class="active" href="projects.html">Projects</a>
-    <a href="resume.html">Resume</a>
-  </div>
+  <div class="projects-container">
+    <h2>Projects</h2>
 
-  <div class="project">
-    <h3>Crystal Clashers</h3>
+    <div class="project">
+      <h3>Crystal Clashers</h3>
       <p>
         This is a two-player game with twelve different characters to choose from, created in Scratch. In a dodgeball-style game, players launch crystals at each other until one player's health is completely gone. Each character has a unique ability, receives buffs as their health lowers, and has a special move that charges over time.
       </p>
       <p>
-        <a href="https://scratch.mit.edu/projects/930640132/" target="_blank" style="color: #F2E9E4; font-weight: bold; text-decoration: none;">
+        <a href="https://scratch.mit.edu/projects/930640132/" target="_blank">
           Play Crystal Clashers on Scratch
         </a>
       </p>
-    <img src="Crystal_Clashers.png" alt="Crystal Clashers">
-  </div>
+      <img src="Crystal_Clashers.png" alt="Crystal Clashers">
+    </div>
 
     <div class="project">
       <h3>Run Master</h3>
-      <p>A mobile app created in Android Studio designed to track your runs. It features five different tabs: a pace calculator, workout suggestions for different distances, activity logging, a news feed, and a setting to switch between miles and kilometers.</p>
+      <p>
+        A mobile app created in Android Studio designed to track your runs. It features five different tabs: a pace calculator, workout suggestions for different distances, activity logging, a news feed, and a setting to switch between miles and kilometers.
+      </p>
       <img src="Run_Master.png" alt="Run Master">
     </div>
 
     <div class="project">
       <h3>NFL 2022-23 Season Simulator</h3>
-      <p>A Python-based simulation of an NFL season. It goes through each game, updates scores by quarter, and advances the top teams to the playoffs. The program also includes weighted probabilities so that teams with better records have a higher chance of winning.</p>
+      <p>
+        A Python-based simulation of an NFL season. It goes through each game, updates scores by quarter, and advances the top teams to the playoffs. The program also includes weighted probabilities so that teams with better records have a higher chance of winning.
+      </p>
       <img src="NFL_Simulator.png" alt="NFL Sim">
     </div>
-  </div>
-  <div class="project">
-    <h3>2020 March Madness Simulator</h3>
+
+    <div class="project">
+      <h3>2020 March Madness Simulator</h3>
       <p>
         This is another sports simulation where the first time you go around picking the team you think is going to win, then once that is done it will simulate all the games and show you your score.
       </p>
       <p>
-        <a href="https://scratch.mit.edu/projects/383566348/" target="_blank" style="color: #F2E9E4; font-weight: bold; text-decoration: none;">
+        <a href="https://scratch.mit.edu/projects/383566348/" target="_blank">
           Play 2020 March Madness Simulator on Scratch
         </a>
       </p>
-    <img src="March_Madness.png" alt="March Madness">
-  </div>
-<br>
-  <footer>
-    <div class="footer-container">
-      <p>Contact me: 
-        <a href="mailto:jacobfiorillo@gmail.com">jacobfiorillo@gmail.com</a> | 
-        <span class="phone">704-962-5040</span> | 
-        <a href="https://jfiorill.github.io/" target="_blank">GitHub</a>
-      </p>
+      <img src="March_Madness.png" alt="March Madness">
     </div>
-  </footer>
+  </div>
+
+  <!-- Footer -->
+  <div id="footer"></div>
+
+  <script>
+    // Load header
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('header').innerHTML = data);
+
+    // Load footer
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('footer').innerHTML = data);
+  </script>
 </body>
 </html>
