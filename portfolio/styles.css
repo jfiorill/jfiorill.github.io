@@ -84,7 +84,6 @@ p {
     color: #C9ADA7;
 }
 
-/* Footer */
 footer {
     background-color: #C9ADA7;
     color: #22223B;
@@ -92,20 +91,18 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;  /* Ensures the content is centered */
 }
 
 footer p.footer-text {
   color: #22223B;
+  margin: 0;
 }
 
 .footer-container {
-    max-width: 90%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: inline-block; /* Ensures the footer doesn't break into multiple lines */
+    max-width: 100%;
+    text-align: center;
 }
 
 .contact-info {
@@ -125,7 +122,6 @@ footer p.footer-text {
     text-decoration: underline;
 }
 
-/* Responsive Design */
 @media screen and (max-width: 600px) {
     .about-container {
         width: 90%; 
