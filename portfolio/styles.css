@@ -116,6 +116,16 @@ footer p.footer-text {
     text-decoration: underline;
 }
 
+.footer-link {
+    color: #22223B;  /* Matches footer text */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
 @media screen and (max-width: 600px) {
     .about-container {
         width: 90%; 
