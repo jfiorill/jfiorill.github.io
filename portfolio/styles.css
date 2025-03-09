@@ -94,8 +94,10 @@ footer {
 }
 
 footer p.footer-text {
-    color: #22223B;
-    margin: 0;  
+  color: #22223B;  
+  text-align: center; 
+  margin: 0;  
+  width: auto; 
 }
 
 /* Footer Container */
