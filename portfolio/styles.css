@@ -10,7 +10,6 @@ h2 {
     color: #f2e9e4;  /* Ensures headings are the correct color */
 }
 
-/* About Page Container */
 .about-container {
   width: 80%;
   max-width: 800px;
@@ -19,7 +18,6 @@ h2 {
   color: #f2e9e4;     /* Correct text color */
 }
 
-/* About Image */
 .about-image {
   display: block;
   margin: 20px auto;
@@ -28,7 +26,6 @@ h2 {
   height: auto;
 }
 
-/* Project Page Container */
 .projects-container {
   width: 80%;
   max-width: 1000px;
@@ -101,7 +98,6 @@ footer p.footer-text {
   display: inline-block;
 }
 
-/* Footer Container */
 .footer-container {
     width: 100%;
     display: inline-block; 
@@ -109,7 +105,6 @@ footer p.footer-text {
     margin: 0 auto; 
 }
 
-/* If there are links in the footer */
 .footer-container a, .phone {
     color: #22223B;
     text-decoration: none;
@@ -149,4 +144,32 @@ footer p.footer-text {
         display: block;
         margin: 5px 0;
     }
+}
+
+.resume-container {
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 80px;
+}
+
+.pdf-viewer {
+    width: 80%;
+    height: 600px;
+    border: 2px solid #22223B;
+}
+
+.download-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #22223B;
+    color: #C9ADA7;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.download-btn:hover {
+    background-color: #4a4e69;
+    color: #f2e9e4;
 }
