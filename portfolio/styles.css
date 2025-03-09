@@ -12,21 +12,52 @@ h2 {
 
 /* About Page Container */
 .about-container {
-    width: 80%;
-    max-width: 1000px;
-    margin: 40px auto;  /* Restores side margins */
-    text-align: justify; /* Improves text readability */
-    line-height: 1.6;
+  width: 80%;
+  max-width: 800px;
+  margin: 20px auto;  /* Centers the content */
+  line-height: 1.6;   /* Improved readability */
+  color: #f2e9e4;     /* Correct text color */
 }
 
 /* About Image */
 .about-image {
-    display: block;
-    margin: 20px auto;
-    width: 60%;  /* Resize image appropriately */
-    max-width: 400px;  /* Ensures the image isn't too large */
-    border-radius: 8px;  /* Adds slight rounding for a cleaner look */
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px; 
+  max-width: 250px;   /* Ideal size for the about page */
+  height: auto;
 }
+
+/* Project Page Container */
+.projects-container {
+  width: 80%;
+  max-width: 1000px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.project {
+  margin-bottom: 70px;
+}
+
+.project img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
+  max-width: 600px;   /* Correct image size for projects */
+  height: auto;
+}
+
+/* Paragraph Styling for Both Pages */
+p {
+  color: #f2e9e4;  /* Ensures consistent text color */
+  text-align: justify;
+  width: 90%;
+  max-width: 700px;
+  margin: 0 auto 20px;
+  line-height: 1.6;
+}
+
 
 /* Top Navigation Bar */
 .topnav {
