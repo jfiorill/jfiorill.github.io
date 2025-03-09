@@ -99,3 +99,20 @@ footer {
     margin: 5px 0;
   }
 }
+
+.about-container {
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    color: #F2E9E4;  /* Correct text color */
+    line-height: 1.6;
+}
+
+.about-image {
+    display: block;
+    margin: 20px auto;
+    width: 250px; /* Adjusted for appropriate size */
+    height: auto;
+    border-radius: 10px;
+}
+
