@@ -84,29 +84,38 @@ p {
 footer {
     background-color: #C9ADA7;
     color: #22223B;
-    padding: 15px;
+    padding: 15px 0; 
     position: fixed;
     bottom: 0;
     width: 100%;
-    text-align: center;  /* Ensures the content is centered */
+    text-align: center;  
+    z-index: 10; 
+    margin: 0;  
 }
 
 footer p.footer-text {
-  color: #22223B;
-  margin: 0;
+    color: #22223B;
+    margin: 0;  
 }
 
+/* Footer Container */
 .footer-container {
-    display: inline-block;
-    max-width: 100%;
+    width: 100%;
+    display: inline-block; 
     text-align: center;
+    margin: 0 auto; 
 }
 
+/* If there are links in the footer */
 .footer-container a, .phone {
     color: #22223B;
     text-decoration: none;
     font-weight: bold;
     margin: 0 10px;
+}
+
+.footer-container a:hover {
+    text-decoration: underline;
 }
 
 @media screen and (max-width: 600px) {
